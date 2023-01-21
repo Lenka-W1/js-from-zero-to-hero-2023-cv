@@ -1,0 +1,168 @@
+:root {
+  --white-text-color: #fff;
+  --bg-or-text-color: #3a3a3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  height: 70px;
+  background-color: var(--bg-or-text-color);
+}
+
+.header-menu {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100%;
+  background-color: inherit;
+}
+
+.menu-navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.menu-list > li {
+  padding: 0 4px;
+}
+
+.menu-list > li a {
+  text-decoration: none;
+  color: var(--white-text-color);;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.menu-list > li a:hover {
+  color: #5eeeee;
+}
+
+.burger-menu {
+  width: 350px;
+  height: 500px;
+  background: burlywood;
+  position: fixed;
+  padding-top: 90px;
+  top: 0;
+  left: -120%;
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  transition: left 0.6s ease 0s;
+}
+
+.burger-menu.active {
+  left: 0;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-item a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  color: var(--white-text-color);
+  padding-bottom: 17px;
+}
+
+.contact-block-container {
+  background-color: #5e5959;
+}
+
+.contact-block {
+  margin: 0 auto;
+  min-height: 300px;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid lightgray;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.info-block {
+  color: var(--white-text-color);
+}
+
+.info-block,
+.foto {
+  margin: 10px;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-list span {
+  margin-bottom: 5px;
+}
+
+.icon-list {
+  list-style: none;
+  display: flex;
+  margin-top: 10px;
+}
+
+.linkedin {
+  background-image: url('../assets/linkedin.svg');
+  color: #3a3a3a;
+}
+
+.githab {
+  background-image: url('../assets/github.svg');
+}
+
+.icon {
+  display: block;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  transition: 0.5s;
+}
+
+.linkedin:hover,
+.githab:hover {
+  filter: invert(0%) sepia(6%) saturate(24%) hue-rotate(37deg) brightness(75%) contrast(100%)
+}
+
+.point {
+  margin-left: 5px;
+}
