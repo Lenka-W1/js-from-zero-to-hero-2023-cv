@@ -90,6 +90,11 @@ body {
   padding-bottom: 17px;
 }
 
+.main {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
 .contact-block-container {
   background-color: #5e5959;
 }
@@ -122,7 +127,7 @@ body {
 }
 
 .info-block,
-.foto {
+.photo {
   margin: 10px;
 }
 
@@ -165,4 +170,25 @@ body {
 
 .point {
   margin-left: 5px;
+}
+
+.block-about-me {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.short-description {
+  min-height: 90px;
+  max-width: 900px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(114, 113, 113, 0.651);
+  border-radius: 4px;
+  color: var(--bg-or-text-color);
+  font-weight: 500;
+  background-color: #fff;
 }
