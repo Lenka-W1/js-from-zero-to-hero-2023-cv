@@ -214,13 +214,15 @@ body {
   background-color: var(--white-text-color);
 }
 
-.education-block {
+.education-block, 
+.skills-block {
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+  min-height: 300px;
 }
 
 .block-title {
@@ -232,6 +234,7 @@ body {
   display: flex;
   margin: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -240,6 +243,7 @@ body {
   border-radius: 4px;
   padding: 15px;
   max-width: 350px;
+  box-shadow: 0 2px 5px rgba(114, 113, 113, 0.651);
 }
 
 .card-title {
@@ -247,8 +251,13 @@ body {
   margin-bottom: 10px;
 }
 
-.block-contant {
+.block-content {
   color: var(--white-text-color);
   letter-spacing: 1px;
   list-style: none;
+}
+
+.hard-skills-list,
+.languages-list {
+  padding-right: 228.5px;
 }
