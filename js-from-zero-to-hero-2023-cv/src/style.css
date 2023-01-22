@@ -1,6 +1,7 @@
 :root {
   --white-text-color: #fff;
   --bg-or-text-color: #3a3a3a;
+  --azure-text-color: #5eeeee;
 }
 
 * {
@@ -55,7 +56,7 @@ body {
 }
 
 .menu-list > li a:hover {
-  color: #5eeeee;
+  color: var(--azure-text-color);
 }
 
 .burger-menu {
@@ -97,6 +98,22 @@ body {
 
 .contact-block-container {
   background-color: #5e5959;
+  background-image: url('../assets/1618630191_23-phonoteka_org-p-veb-fon-23.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.shadow-block {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+  background-color: #5e5959;
+  opacity: 0.5;
+  top: 0;
+  z-index: 1;
 }
 
 .contact-block {
@@ -108,6 +125,8 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-top: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .photo {
@@ -115,6 +134,8 @@ body {
   height: 200px;
   border-radius: 50%;
   border: 4px solid lightgray;
+  position: relative;
+  z-index: 2;
 }
 
 .photo img {
@@ -190,5 +211,44 @@ body {
   border-radius: 4px;
   color: var(--bg-or-text-color);
   font-weight: 500;
-  background-color: #fff;
+  background-color: var(--white-text-color);
+}
+
+.education-block {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.block-title {
+  color: var(--bg-or-text-color);
+  text-transform: uppercase;
+}
+
+.cards-block {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--bg-or-text-color);
+  margin: 10px;
+  border-radius: 4px;
+  padding: 15px;
+  max-width: 350px;
+}
+
+.card-title {
+  color: var(--azure-text-color);
+  margin-bottom: 10px;
+}
+
+.block-contant {
+  color: var(--white-text-color);
+  letter-spacing: 1px;
+  list-style: none;
 }
