@@ -2,6 +2,7 @@
   --white-text-color: #fff;
   --bg-or-text-color: #3a3a3a;
   --azure-text-color: #5eeeee;
+  --bg-or-burger-menu-color: #5e5959;
 }
 
 * {
@@ -27,7 +28,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   height: 100%;
-  background-color: inherit;
+  background-color: var(--bg-or-text-color);
 }
 
 .menu-navigation {
@@ -50,7 +51,7 @@ body {
 
 .menu-list > li a {
   text-decoration: none;
-  color: var(--white-text-color);;
+  color: var(--white-text-color);
   font-size: 20px;
   transition: 0.5s;
 }
@@ -62,7 +63,7 @@ body {
 .burger-menu {
   width: 350px;
   height: 500px;
-  background: burlywood;
+  background: var(--bg-or-burger-menu-color);
   position: fixed;
   padding-top: 90px;
   top: 0;
@@ -97,7 +98,7 @@ body {
 }
 
 .contact-block-container {
-  background-color: #5e5959;
+  background-color: var(--bg-or-burger-menu-color);
   background-image: url('../assets/1618630191_23-phonoteka_org-p-veb-fon-23.jpg');
   background-repeat: no-repeat;
   background-position: top;
@@ -109,7 +110,6 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background-color: aqua; */
   background-color: #5e5959;
   opacity: 0.5;
   top: 0;
@@ -242,7 +242,7 @@ body {
   margin: 10px;
   border-radius: 4px;
   padding: 15px;
-  max-width: 350px;
+  width: 350px;
   box-shadow: 0 2px 5px rgba(114, 113, 113, 0.651);
 }
 
@@ -257,7 +257,81 @@ body {
   list-style: none;
 }
 
-.hard-skills-list,
-.languages-list {
-  padding-right: 228.5px;
+@media screen and (max-width: 660px) {
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .header-menu {
+    background-color: var(--bg-or-text-color);
+  }
+
+  .menu-navigation {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .burger-menu-button {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: 9%;
+    top: 20px;
+    cursor: pointer;
+    z-index: 6;
+  }
+  
+  .burger-menu-button::before,
+  .burger-menu-button::after {
+    content: "";
+    width: 100%;
+    height: 10%;
+    background-color: var(--white-text-color);
+    position: absolute;
+    transition: all 0.6s ease 0s;
+  }
+  
+  .burger-menu-button::after {
+    bottom: 0;
+  }
+  
+  .burger-menu-button::before {
+    top: 0;
+  }
+  
+  .burger-menu-button span {
+    width: 100%;
+    height: 10%;
+    background-color: var(--white-text-color);
+    position: absolute;
+    top: 50%;
+    transition: all 0.6s ease 0s;
+    transform: scale(1) translate(0px, -50%);
+  }
+  
+  .burger-menu-button.active span{
+    transform: scale(0) translate(0px, -50%);
+  }
+  
+  .burger-menu-button.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  
+  .burger-menu-button.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .contact-block-container {
+    margin-top: 70px;
+  }
 }
