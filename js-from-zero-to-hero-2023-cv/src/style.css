@@ -110,7 +110,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #5e5959;
+  background-color: var(--bg-or-burger-menu-color);
   opacity: 0.5;
   top: 0;
   z-index: 1;
@@ -169,7 +169,7 @@ body {
 
 .linkedin {
   background-image: url('../assets/linkedin.svg');
-  color: #3a3a3a;
+  color: var(--bg-or-text-color);
 }
 
 .githab {
@@ -255,6 +255,102 @@ body {
   color: var(--white-text-color);
   letter-spacing: 1px;
   list-style: none;
+}
+
+.section-carousel {
+  padding: 50px 0;
+}
+
+.carousel-block-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-block {
+  max-width: 750px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-block {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  left: 0;
+  border: 4px solid var(--bg-or-text-color);
+  border-radius: 4px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 25px;
+  background-position: center;
+  border: 0;
+  cursor: pointer;
+  z-index: 3;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.next {
+  left: calc(100% - 120px);
+  background-image: url('../assets/arrow-right.svg');
+}
+
+.prev {
+  right: calc(100% - 120px);
+  background-image: url('../assets/arrow-left.svg');
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.6;
+}
+
+.carousel {
+  min-width: 1500px;
+  height: 250px;
+  display: flex;
+}
+
+.carousel-image {
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first {
+  background-image: url('../assets/Simon.jpg');
+}
+
+.second {
+  background-image: url('../assets/hungry_Simon.jpg');
+}
+
+.third {
+  background-image: url('../assets/Simon_and_the_empty_bowl.jpg');
+}
+
+.fourth {
+  background-image: url('../assets/angry_Simon.jpg');
+}
+
+.fifth {
+  background-color: var(--white-text-color);
+  background-image: url('../assets/thinking_Simon.png');
+}
+
+.sixth {
+  background-image: url('../assets/Simon_breaking_a_plant');
 }
 
 @media screen and (max-width: 660px) {
