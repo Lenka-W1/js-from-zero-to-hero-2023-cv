@@ -300,12 +300,12 @@ body {
 }
 
 .next {
-  left: calc(100% - 120px);
+  left: calc(50% + 385px);
   background-image: url('../assets/arrow-right.svg');
 }
 
 .prev {
-  right: calc(100% - 120px);
+  right: calc(50% + 385px);
   background-image: url('../assets/arrow-left.svg');
 }
 
@@ -350,7 +350,45 @@ body {
 }
 
 .sixth {
-  background-image: url('../assets/Simon_breaking_a_plant');
+  background-image: url('../assets/Simon_breaking_a_plant.jpg');
+}
+
+@media screen and (max-width: 988px) {
+
+  .carousel-block {
+    max-width: 690px;
+  }
+  
+  .carousel {
+    min-width: 1380px;
+  }
+
+  .carousel-image {
+    width: 230px;
+  }
+
+  .next {
+    left: calc(50% + 355px);
+  }
+
+  .prev {
+    right: calc(50% + 355px);
+  }
+}
+
+@media screen and (max-width: 955px) {
+
+  .carousel-block {
+    max-width: 460px;
+  }
+
+  .next {
+    left: calc(50% + 240px);
+  }
+
+  .prev {
+    right: calc(50% + 240px);
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -429,5 +467,64 @@ body {
 
   .contact-block-container {
     margin-top: 70px;
+  }
+
+  .carousel-block {
+    max-width: 220px;
+    height: 220px;
+  }
+  
+  .carousel {
+    min-width: 1320px;
+    height: 220px;
+  }
+
+  .carousel-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .next {
+    left: calc(50% + 120px);
+  }
+
+  .prev {
+    right: calc(50% + 120px);
+  }
+}
+
+@media screen and (max-width: 369px) {
+  
+  .card {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+
+  .block-title {
+    font-size: 22px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+
+  .card {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 329px) {
+
+  .card {
+    width: 300px;
   }
 }
