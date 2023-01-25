@@ -157,8 +157,10 @@ body {
   flex-direction: column;
 }
 
-.contact-info-list span {
+.contact-list-item {
   margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .icon-list {
@@ -351,6 +353,46 @@ body {
 
 .sixth {
   background-image: url('../assets/Simon_breaking_a_plant.jpg');
+}
+
+.footer-wrapper {
+  background-color: var(--bg-or-text-color);
+}
+
+.footer {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 70px;
+  background-color: var(--bg-or-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.github-link {
+  color: var(--white-text-color);
+  text-decoration: none;
+  display: flex;
+  transition: 0.5s ease-in-out;
+}
+
+.github-link:hover {
+  filter: invert(10%) sepia(7%) saturate(4234%) hue-rotate(145deg) brightness(102%) contrast(90%);
+}
+
+.link-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 3px 0 0 3px;
+}
+
+.white-github-icon {
+  background-image: url('../assets/github_white.svg');
+}
+
+.year {
+  color: var(--white-text-color);
 }
 
 @media screen and (max-width: 988px) {
