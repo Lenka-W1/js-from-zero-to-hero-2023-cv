@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/d662ed476d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>My CV</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-menu">
+      <nav class="menu-navigation">
+         <ul class="menu-list">
+           <li><a href="#about">About me</a></li>
+           <li><a href="#education">Education</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#contacts">Contacts</a></li>
+         </ul>
+      </nav>
+      <div class="burger-menu-button">
+        <span></span>
+      </div>
+      <nav class="burger-menu">
+        <ul class="menu-item">
+          <li><a href="#about" class="links">About me</a></li>
+          <li><a href="#education" class="links">Education</a></li>
+          <li><a href="#skills" class="links">Skills</a></li>
+          <li><a href="#contacts" class="links">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>  
+  </header>
+  <main class="main">
+    <section class="contact-block-container" id="contacts">
+      <div class="contact-block">
+        <figure class="photo">
+          <img src="../assets/my_photo.jpg" alt="My photo">
+        </figure>
+        <div class="info-block">
+          <div class="contact-info-list">
+            <h1 class="contact-list-item">Full name: Elena Khovavko</h1>
+            <h2 class="contact-list-item">Age: 35</h2>
+            <h2 class="contact-list-item">Address: Republic of Belarus, Brest</h2>
+            <h2 class="contact-list-item">Phone: +375 29 258-95-90</h2>
+            <h2 class="contact-list-item">Email: lenka-w1@mail.ru</h2>
+          </div>
+          <nav>
+            <ul class="icon-list">
+              <li>
+                <a 
+                  href="https://www.linkedin.com/in/elena-khovavko/"
+                  class="icon linkedin"
+                  target="_blank"
+                >
+                </a>
+              </li>
+              <li class="point">
+                <a 
+                  href="https://github.com/Lenka-W1"
+                  class="icon githab"
+                  target="_blank"
+                >
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="shadow-block"></div>
+    </section>
+    <section class="wrapper-block-about-me" id="about">
+      <div class="block-about-me">
+        <p class="short-description">
+          I'm a beginner front-end developer. Interest in IT appeared about two years ago. I completed front-end
+          development courses at the MyIT school in Brest and courses at the Rolling Scope school.
+          I'm ready to learn new things and develop in web-development.
+        </p>
+      </div>
+    </section>
+    <section class="education-block-wrapper" id="education">
+      <div class="education-block">
+        <h2 class="block-title">Education</h2>
+        <div class="cards-block">
+          <div class="basic-education-card card">
+            <h3 class="card-title">Basic</h3>
+            <p class="block-content">
+              Syktyvkar Technological College,
+              Syktyvkar, Russia.
+              Graduated as a fashion designer.
+            </p>
+          </div>
+          <div class="additional-education-card card">
+            <h3 class="card-title">Additional (courses)</h3>
+            <ul class="block-content">
+              <li>The Rolling Scope School, REACT.</li>
+              <li>The Rolling Scope School, JavaScript/Front-end.</li>
+              <li>MyIT school, Brest, web-development.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-block-wrapper" id="skills">
+      <div class="skills-block">
+        <h2 class="block-title">Skills</h2>
+        <div class="cards-block">
+          <div class="hard-skills-card card">
+            <h3 class="card-title">Hard skills</h3>
+            <ul class="block-content hard-skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="languages-card card">
+            <h3 class="card-title">Languages</h3>
+            <ul class="block-content languages-list">
+              <li>Russian (native)</li>
+              <li>English (A2)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-carousel">
+      <div class="carousel-block-wrapper">
+        <button class="prev"></button>
+        <div class="carousel-block">
+          <div class="carousel">
+            <div class="carousel-image first"></div>
+            <div class="carousel-image second"></div>
+            <div class="carousel-image third"></div>
+            <div class="carousel-image fourth"></div>
+            <div class="carousel-image fifth"></div>
+            <div class="carousel-image sixth"></div>
+          </div>
+        </div>
+        <button class="next"></button>
+      </div>
+    </section>
+    <footer class="footer-wrapper">
+      <div class="footer">
+        <a href="https://github.com/Lenka-W1" target="_blank" class="github-link">
+          <div class="icon white-github-icon"></div>
+          <h2 class="link-name">Lenka-W1</h2>
+        </a>
+        <span class="year">2023</span>
+      </div>
+    </footer>
+  </main>
+  <script src="../src/index.js"></script>
+</body>
+</html>
